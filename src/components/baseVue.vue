@@ -31,6 +31,11 @@ export default {
   },
   computed: {
     currentTabComponent () {
+      this.$gtag.event(new Date().toISOString(), {
+        event_category: 'tab-click',
+        event_label: this.tab,
+        value: 0
+      })
       return this.tab
     }
   },

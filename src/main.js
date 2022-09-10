@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import vuetify from 'vuetify'
+import VueGtag from 'vue-gtag'
+
+Vue.use(VueGtag, {
+  config: { id: 'UA-240781919-1' }
+})
 
 Vue.config.productionTip = false
 
