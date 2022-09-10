@@ -38,7 +38,7 @@ export default {
       }
 
       axios
-        .post('http://developer-toolkits.herokuapp.com/api/v1/users/json-formate/', { input_data: data })
+        .post('https://developer-toolkits.herokuapp.com/api/v1/users/json-formate/', { input_data: data })
         .then(response => (this.info = response))
         .catch(error => console.log(error))
     }
